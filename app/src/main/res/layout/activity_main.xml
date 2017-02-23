@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ffffff"
+    android:background="@drawable/nbackground"
     tools:context="com.example.vero.eden.MainActivity">
 
     <LinearLayout
@@ -19,8 +19,6 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
         android:layout_weight="1">
-
-
         <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -237,6 +235,5 @@
                 android:text="@string/removeText"
                 android:background="#55A802"/>
         </LinearLayout>
-
     </Toolbar>
 </LinearLayout>
