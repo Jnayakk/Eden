@@ -14,4 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_btn"
+        android:id="@+id/submitGpaBtn"
+        android:onClick="mainactivity"
+        android:background="@drawable/button_border"/>
 </RelativeLayout>
