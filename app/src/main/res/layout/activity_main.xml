@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -21,9 +19,7 @@
         android:layout_weight="1">
         <ScrollView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-
-            >
+            android:layout_height="fill_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,7 +44,7 @@
                         android:textSize="20sp"
                         android:layout_weight="1"
                         android:textColor="#55A802"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:layout_gravity="center_vertical"/>
 
                     <TextView
@@ -79,52 +75,33 @@
                         <Spinner
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/course_weight"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:entries="@array/grocery_list">
                         </Spinner>
                         <EditText
                             android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:gravity="center"
                             android:background="@drawable/edittext_border"
-                            android:hint="@string/kg_hint"
-                            android:textSize="12sp">
+                            >
                         </EditText>
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="14sp"
-                                android:layout_weight="3"
-                                android:gravity="end"/>
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"/>
                             <EditText
                                 android:layout_width="fill_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:textSize="10sp"
-                                android:background="@drawable/edittext_border"
-                                android:hint="@string/quantity_hint">
-                            </EditText>
-                            <TextView
-                                android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="14sp"
-                                android:layout_weight="3"
-                                android:gravity="end"/>
-                        </LinearLayout>
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                >
+                            </EditText>
+
+
                     </LinearLayout>
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-
                         android:textSize="9sp"
                         android:layout_weight="1"
                         android:gravity="end"/>
@@ -178,6 +155,7 @@
                     android:id="@+id/submitGpaBtn"
                     android:onClick="submitGpa"
                     android:background="@drawable/button_border"/>
+
             </LinearLayout>
         </ScrollView>
 
@@ -208,7 +186,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/addText"
                 android:background= "@drawable/licon"/>
-
             <ImageButton
                 android:layout_weight="1"
                 android:layout_width="fill_parent"
@@ -216,7 +193,6 @@
                 android:text="@string/addText"
                 android:onClick="addcourseGrade"
                 android:background= "@drawable/stockicon4"/>
-
             <ImageButton
                 android:layout_weight="1"
                 android:layout_width="fill_parent"
@@ -224,7 +200,6 @@
                 android:text="@string/addText"
                 android:onClick="cameraactivity"
                 android:background= "@drawable/cameraicon"/>
-
             <Button
                 android:layout_weight="1.3"
                 android:layout_width="fill_parent"
