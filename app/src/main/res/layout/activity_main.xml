@@ -120,7 +120,6 @@
                                 android:layout_weight="3"
                                 android:gravity="end"/>
                         </LinearLayout>
-
                     </LinearLayout>
                     <TextView
                         android:layout_width="fill_parent"
@@ -138,7 +137,6 @@
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-
                         android:textSize="14sp"
                         android:layout_weight="1"
                         android:gravity="end"/>
@@ -148,14 +146,13 @@
                         android:layout_height="wrap_content"
                         android:text="@string/removeText"
                         android:id="@+id/removeCourseButton"
-                        android:onClick="removecourseGrade"
+                        android:onClick="removeItem"
 
                         android:background="@drawable/button_border"/>
 
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-
                         android:textSize="14sp"
                         android:layout_weight="3.4"
                         android:gravity="end"/>
@@ -166,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/addText"
                         android:id="@+id/addCourseButton"
-                        android:onClick="addcourseGrade"
+                        android:onClick="addItem"
 
                         android:background="@drawable/button_border"/>
                 </LinearLayout>
@@ -200,8 +197,9 @@
                 android:layout_weight="1"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
+                android:id="@+id/addItemBtn"
                 android:text="@string/addText"
-                android:onClick="addcourseGrade"
+                android:onClick="splashscreen"
                 android:background= "@drawable/homeicon"/>
 
             <ImageButton
@@ -209,7 +207,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="@string/addText"
-                android:onClick="addcourseGrade"
                 android:background= "@drawable/licon"/>
 
             <ImageButton
@@ -225,7 +222,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="@string/addText"
-                android:onClick="addcourseGrade"
+                android:onClick="cameraactivity"
                 android:background= "@drawable/cameraicon"/>
 
             <Button
