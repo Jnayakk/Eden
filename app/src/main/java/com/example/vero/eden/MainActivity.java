@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Customise the EditTexts
         editKg.setBackgroundResource(R.drawable.edittext_border);
+        editKg.setInputType(InputType.TYPE_CLASS_NUMBER);
 
         // Set the colour of the spinner to green
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.grocery_list, R.layout.spinner_layout);

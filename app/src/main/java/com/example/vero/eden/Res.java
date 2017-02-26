@@ -1,10 +1,12 @@
 package com.example.vero.eden;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,5 +27,20 @@ public class Res extends AppCompatActivity {
         resultText.setGravity(Gravity.CENTER_VERTICAL);
         mLayout = (LinearLayout) findViewById(R.id.gpaLayout);
         mLayout.addView(resultText);
+    }
+
+    public void cameraactivity(View view) {
+        Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
+    }
+
+    public void splashscreen(View view) {
+        Intent intent = new Intent(this, SplashScreen.class);
+        startActivity(intent);
+    }
+
+    public void calculate(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

@@ -4,7 +4,7 @@
     <string name="kilogram">Kilograms</string>
     <string name="addText">+</string>
     <string name="removeText">-</string>
-    <string name="submit_btn">Submit</string>
+    <string name="submit_btn">Enter</string>
     <string name="quantity_text">Quantity</string>
     <string name="kg_hint">Enter the weight(kg)</string>
     <string name="quantity_hint">Enter the Amount</string>
