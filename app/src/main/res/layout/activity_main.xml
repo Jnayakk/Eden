@@ -44,16 +44,6 @@
                         android:textSize="20sp"
                         android:layout_weight="1"
                         android:textColor="#55A802"
-                        android:gravity="left"
-                        android:layout_gravity="center_vertical"/>
-
-                    <TextView
-                        android:text="@string/quantity_text"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_weight="1"
-                        android:textColor="#55A802"
                         android:gravity="center"
                         android:layout_gravity="center_vertical"/>
                 </LinearLayout>
@@ -77,24 +67,15 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
+                            android:id="@+id/groceryItemSpinner"
                             android:entries="@array/grocery_list">
                         </Spinner>
                         <EditText
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/edittext_border"
-                            >
-                        </EditText>
-                        <TextView
-                            android:layout_width="50px"
-                            android:layout_height="wrap_content"/>
-                            <EditText
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@drawable/edittext_border"
-                                >
+                            android:id="@+id/kgEditText"
+                            android:background="@drawable/edittext_border">
                             </EditText>
 
 
@@ -152,8 +133,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/submit_btn"
-                    android:id="@+id/submitGpaBtn"
-                    android:onClick="submitGpa"
+                    android:id="@+id/enterBtn"
+                    android:onClick="enterCarbon"
                     android:background="@drawable/button_border"/>
 
             </LinearLayout>
