@@ -51,5 +51,21 @@ public class CameraActivity extends Activity implements OnClickListener {
             toast.show();
         }
     }
+
+    public void splashscreen(View view) {
+        Intent intent = new Intent(this, SplashScreen.class);
+        startActivity(intent);
+    }
+
+    public void graphscreen(View view) {
+        Intent intent = new Intent(this, GraphActivity.class);
+        startActivity(intent);
+    }
+
+    public void mainactivity(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
 
