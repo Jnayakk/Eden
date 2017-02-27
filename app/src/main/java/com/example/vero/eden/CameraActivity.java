@@ -62,6 +62,13 @@ public class CameraActivity extends Activity implements OnClickListener {
                 intent1.putExtra(PRODUCT_KEY, "Pork");
                 startActivity(intent1);
             }
+            else if (new String("067800000418").equals(scanContent)){
+                Toast.makeText(getApplicationContext(), "Tuna added to your list", Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent(this, MainActivity.class);
+                intent1.putExtra(PRODUCT_KEY, "Tuna");
+                startActivity(intent1);
+            }
+
             //formatTxt.setText(scanFormat);
             //contentTxt.setText(scanContent);
 

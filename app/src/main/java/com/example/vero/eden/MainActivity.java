@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
             else if (product.equals("Pork")){
                 groceryItem.setSelection(3);
             }
+            else if (product.equals("Tuna")){
+                groceryItem.setSelection(6);
+            }
         }
     }
 
