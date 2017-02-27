@@ -33,8 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:onClick="scanNow"
-        android:background="@drawable/barcodepic" />
+        android:onClick="scanNow"/>
     <TextView
         android:id="@+id/scan_format"
         android:layout_width="wrap_content"

@@ -43,8 +43,24 @@ public class CameraActivity extends Activity implements OnClickListener {
             String scanFormat = scanningResult.getFormatName();
 
             // display it on screen
-            formatTxt.setText(scanFormat);
-            contentTxt.setText(scanContent);
+            if (new String("041757011611").equals(scanContent)){
+                Toast.makeText(getApplicationContext(), "Cheese", Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent(this, MainActivity.class);
+                startActivity(intent1);
+            }
+            else if (new String("036000291452").equals(scanContent)){
+                Toast.makeText(getApplicationContext(), "Beef", Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent(this, MainActivity.class);
+                startActivity(intent1);
+            }
+            else if (new String("188114771211").equals(scanContent)){
+                Toast.makeText(getApplicationContext(), "Pork", Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent(this, MainActivity.class);
+                startActivity(intent1);
+            }
+            //formatTxt.setText(scanFormat);
+            //contentTxt.setText(scanContent);
+
 
         }else{
             Toast toast = Toast.makeText(getApplicationContext(),"No scan data received!", Toast.LENGTH_SHORT);
