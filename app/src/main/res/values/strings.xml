@@ -24,4 +24,6 @@
         <item>Beans</item>
         <item>Vegetables</item>
     </string-array>
+
+    <string name="scan">Scan</string>
 </resources>
