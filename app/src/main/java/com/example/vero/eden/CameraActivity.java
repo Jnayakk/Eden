@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class CameraActivity extends Activity implements OnClickListener {
+    public final static String PRODUCT_KEY = "product_key";
     private Button scanBtn;
     private TextView formatTxt, contentTxt;
 
@@ -44,18 +45,21 @@ public class CameraActivity extends Activity implements OnClickListener {
 
             // display it on screen
             if (new String("041757011611").equals(scanContent)){
-                Toast.makeText(getApplicationContext(), "Cheese", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Cheese added to your list", Toast.LENGTH_LONG).show();
                 Intent intent1 = new Intent(this, MainActivity.class);
+                intent1.putExtra(PRODUCT_KEY, "Cheese");
                 startActivity(intent1);
             }
             else if (new String("036000291452").equals(scanContent)){
-                Toast.makeText(getApplicationContext(), "Beef", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Beef added to your list", Toast.LENGTH_LONG).show();
                 Intent intent1 = new Intent(this, MainActivity.class);
+                intent1.putExtra(PRODUCT_KEY, "Beef");
                 startActivity(intent1);
             }
             else if (new String("188114771211").equals(scanContent)){
-                Toast.makeText(getApplicationContext(), "Pork", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Pork added to your list", Toast.LENGTH_LONG).show();
                 Intent intent1 = new Intent(this, MainActivity.class);
+                intent1.putExtra(PRODUCT_KEY, "Pork");
                 startActivity(intent1);
             }
             //formatTxt.setText(scanFormat);

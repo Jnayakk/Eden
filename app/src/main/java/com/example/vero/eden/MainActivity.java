@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mLayout = (LinearLayout) findViewById(R.id.addSpinnerLayout);
-
         sitem.add("Lamb");
         sitem.add("Beef");
         sitem.add("Cheese");
@@ -54,6 +53,20 @@ public class MainActivity extends AppCompatActivity {
         sitem.add("Nuts");
         sitem.add("Beans");
         sitem.add("Vegetables");
+
+        groceryItem = (Spinner) findViewById(R.id.groceryItemSpinner);
+        String product = getIntent().getStringExtra(CameraActivity.PRODUCT_KEY);
+        if (product!= null){
+            if (product.equals("Beef")){
+                groceryItem.setSelection(1);
+            }
+            else if (product.equals("Cheese")){
+                groceryItem.setSelection(2);
+            }
+            else if (product.equals("Pork")){
+                groceryItem.setSelection(3);
+            }
+        }
     }
 
     public void cameraactivity(View view) {
