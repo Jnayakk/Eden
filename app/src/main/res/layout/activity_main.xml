@@ -75,7 +75,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:id="@+id/kgEditText"
-                            android:inputType="number"
+                            android:inputType="numberDecimal"
                             android:background="@drawable/edittext_border">
                             </EditText>
 
