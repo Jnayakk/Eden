@@ -173,7 +173,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="@string/addText"
-                android:onClick="addcourseGrade"
+                android:onClick="graphscreen"
                 android:background= "@drawable/stockicon4"/>
             <ImageButton
                 android:layout_weight="1"

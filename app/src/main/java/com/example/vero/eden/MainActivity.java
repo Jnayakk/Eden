@@ -18,6 +18,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.jjoe64.graphview.GraphView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void splashscreen(View view) {
         Intent intent = new Intent(this, SplashScreen.class);
+        startActivity(intent);
+    }
+
+    public void graphscreen(View view) {
+        Intent intent = new Intent(this, GraphActivity.class);
         startActivity(intent);
     }
 

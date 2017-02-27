@@ -14,11 +14,27 @@ public class GraphActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph);
-    }
-    GraphView graphView = (GraphView) findViewById(R.id.graph);
-    LineGraphSeries<DataPoint> series = new LineGraphSeries<>(getDataPoint());
-    
 
+
+        GraphView graph = (GraphView) findViewById(R.id.graph);
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
+                new DataPoint(0, 1),
+                new DataPoint(1, 5),
+                new DataPoint(2, 3),
+                new DataPoint(3, 2),
+                new DataPoint(4, 6)
+        });
+        graph.addSeries(series);
+
+        /*
+        GraphView graphView =(GraphView)findViewById(R.id.graph);
+
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(getDataPoint());
+        graphView.addSeries(series);
+        */
+    }
+
+    /*
     private DataPoint[] getDataPoint(){
         DataPoint[] dp = new DataPoint[]{
                 new DataPoint(0,1),
@@ -27,5 +43,5 @@ public class GraphActivity extends AppCompatActivity {
         };
         return (dp);
     }
-
+    */
 }

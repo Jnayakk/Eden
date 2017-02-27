@@ -11,8 +11,22 @@
     android:orientation="vertical"
     tools:context="com.example.vero.eden.GraphActivity">
 
-    <com.jjoe64.graphview.GraphView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/graph"/>
+        android:orientation="vertical">
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/graph"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/quantity_hint"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
 </LinearLayout>
