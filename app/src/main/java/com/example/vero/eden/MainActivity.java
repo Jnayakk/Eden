@@ -186,8 +186,11 @@ public class MainActivity extends AppCompatActivity {
                     listofCo2.add(carbonfp.getCarbonEmissions(itemString, value));
                 }
                 Double totalcarbonFootprint = carbonfp.getTotalCarbon(listofCo2);
-                String s = totalcarbonFootprint.toString();
+                Double newKB = Math.round(totalcarbonFootprint*100.0)/100.0;
+                String s = newKB.toString();
                 intent.putExtra(CO2_KEY, s);
+                listofCo2.clear();
+                totalcarbonFootprint = 0.0;
                 startActivity(intent);
             }
         });
