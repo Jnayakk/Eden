@@ -10,13 +10,13 @@ import android.text.Html;
 import android.view.View;
 import java.util.Timer;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
+        getSupportActionBar().hide();
     }
 
     public void mainactivity(View view){
