@@ -43,8 +43,8 @@ public class CameraActivity extends Activity implements OnClickListener {
             String scanFormat = scanningResult.getFormatName();
 
             // display it on screen
-            formatTxt.setText("FORMAT: " + scanFormat);
-            contentTxt.setText("CONTENT: " + scanContent);
+            formatTxt.setText(scanFormat);
+            contentTxt.setText(scanContent);
 
         }else{
             Toast toast = Toast.makeText(getApplicationContext(),"No scan data received!", Toast.LENGTH_SHORT);
