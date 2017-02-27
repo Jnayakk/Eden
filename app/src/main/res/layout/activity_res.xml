@@ -17,14 +17,65 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
         android:layout_weight="1">
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/gpaLayout"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/produced"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="#55A802"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#55A802"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amt"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="#55A802"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#55A802"/>
         </LinearLayout>
-        </LinearLayout>
+    </LinearLayout>
     <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,12 +98,13 @@
                 android:layout_weight="1"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
+                android:onClick="mainactivity"
                 android:background= "@drawable/licon"/>
             <ImageButton
                 android:layout_weight="1"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:onClick="addcourseGrade"
+                android:onClick="graphactivity"
                 android:background= "@drawable/stockicon4"/>
             <ImageButton
                 android:layout_weight="1"

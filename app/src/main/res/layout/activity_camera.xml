@@ -18,12 +18,23 @@
         android:orientation="vertical"
         android:layout_weight="1">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scanbarcode"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#55A802"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     <Button android:id="@+id/scan_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/scan"
-        android:onClick="scanNow" />
+        android:onClick="scanNow"
+        android:background="@drawable/barcodepic" />
     <TextView
         android:id="@+id/scan_format"
         android:layout_width="wrap_content"

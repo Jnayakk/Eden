@@ -20,13 +20,8 @@ public class Res extends AppCompatActivity {
         setContentView(R.layout.activity_res);
 
         String overallM = getIntent().getStringExtra(MainActivity.CO2_KEY);
-        resultText = new TextView(Res.this);
+        resultText = (TextView) findViewById(R.id.amt);
         resultText.setText(overallM);
-        resultText.setTextSize(18);
-        resultText.setTextColor(Color.BLACK);
-        resultText.setGravity(Gravity.CENTER_VERTICAL);
-        mLayout = (LinearLayout) findViewById(R.id.gpaLayout);
-        mLayout.addView(resultText);
     }
 
     public void cameraactivity(View view) {
@@ -39,8 +34,13 @@ public class Res extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void calculate(View view) {
+    public void mainactivity(View view) {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void graphactivity(View view) {
+        Intent intent = new Intent(this, GraphActivity.class);
         startActivity(intent);
     }
 }

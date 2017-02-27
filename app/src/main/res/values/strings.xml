@@ -8,6 +8,8 @@
     <string name="quantity_text">Quantity</string>
     <string name="kg_hint">Enter the weight(kg)</string>
     <string name="quantity_hint">Enter the Amount</string>
+    <string name="produced">The amount of Carbon Emissions Produced is</string>
+    <string name="scanbarcode">Scan the barcode of your product here</string>
 
     <string-array name="grocery_list">
         <item>Lamb</item>
